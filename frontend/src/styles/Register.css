@@ -1,0 +1,108 @@
+:root {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.register {
+    .register-box {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .box {
+            height: auto;
+            width: 350px;
+            margin: 10px;
+            border: 1.5px solid #aaaaaa;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            padding: 20px 40px;
+
+            img {
+                width: 180px;
+                margin-bottom: 30px;
+                margin-top: 15px;
+            }
+
+            p{
+                font-size: 16px;
+                font-weight: 700;
+                color: #777777;
+                text-align: center;
+            }
+
+            input {
+                width: 100%;
+                height: 40px;
+                border: 1px solid #aaa;
+                border-radius: 2px;
+                margin-top: 5px;
+                font-size: .75rem;
+                padding: 0 5px;
+                background: #eee;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .register-btn {
+                height: 32px;
+                margin-top: 15px;
+                border: none;
+                border-radius: 7px;
+                background: #0069ad;
+                font-size: .9rem;
+                font-weight: 500;
+                color: #fff;
+            }
+
+            .or-option {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                margin-top: 30px;
+                align-items: center;
+
+                .line {
+                    height: 1px;
+                    width: 100px;
+                    background: #aaa;
+                }
+
+                span {
+                    height: 14px;
+                    font-size: 13px;
+                    font-weight: 500;
+                }
+
+            }
+
+            .forgot-passwd {
+                margin-top: 15px;
+                font-size: 14px;
+                font-weight: 500;
+                color: #585858;
+            }
+
+            .signup-option, .signin-option {
+                font-size: 14px;
+                font-weight: 500;
+                color: #585858;
+
+                
+            }
+            .option {
+                color: #0061a1;
+                font-size: 14px;
+                font-weight: 700;
+            }
+        }
+    }
+
+}
