@@ -1,6 +1,8 @@
+// complated UI
+
 import React, { useState } from 'react'
 import '../styles/Register.css'
-import logo from '/instagram-text-icon.svg'
+import logo from '../assets/instagram-text-icon.svg'
 import { NavLink } from 'react-router-dom'
 
 function LoginPage() {

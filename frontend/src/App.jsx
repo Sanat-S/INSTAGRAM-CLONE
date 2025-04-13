@@ -8,7 +8,7 @@ import ReelPage from './pages/ReelPage'
 import MessagePage from './pages/MessagePage'
 import ProfilePage from './pages/ProfilePage'
 import SignupPage from './pages/SignupPage'
-import CreateBar from './components/CreateBar'
+
 
 const browserRouter = createBrowserRouter([
   {
@@ -20,7 +20,6 @@ const browserRouter = createBrowserRouter([
       { path: 'reels', element: <ReelPage /> },
       { path: '/inbox', element: <MessagePage /> },
       { path: '/profile', element: <ProfilePage /> },
-      {path: '/create', element: <CreateBar />}
     ]
   },
   { path: '/login', element: <LoginPage /> },

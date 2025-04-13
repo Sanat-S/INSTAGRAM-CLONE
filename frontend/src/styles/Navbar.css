@@ -1,0 +1,122 @@
+/* navbar */
+.sidebar {
+    top: 0;
+    left: 0;
+    width: 245px;
+    position: fixed;
+    z-index: 10;
+    border-right: 1.5px solid #ddd;
+    height: 100%;
+    padding: 41px 0 0 0;
+  
+    .logo-collapse {
+        display: none;
+        margin-left: 24px;
+    }
+  
+    .sidebarlogo {
+        width: 110px;
+        margin-left: 25px;
+    }
+  
+    .sidebarlinks {
+        margin: 30px 15px 0 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+  
+        .links {
+            display: flex;
+            position: relative;
+            align-items: center;
+            gap: 15px;
+            font-size: 17px;
+            font-weight: 400;
+            color: black;
+            padding: 12px;
+            border-radius: 10px;
+  
+            &:hover {
+                background-color: #eeeeee;
+            }
+        }
+    }
+  
+    .bottommenu {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        font-size: 17px;
+        font-weight: 400;
+        margin: 0 15px 20px 12px;
+        padding: 12px;
+        color: #000;
+        cursor: pointer;
+  
+        &:hover {
+            font-weight: 500;
+  
+            .menu-logo{
+                stroke-width: 2.5px;
+            }
+        }
+    }
+  
+    @media screen and (max-width: 1200px) {
+        width: 80px;
+        justify-content: center;
+  
+        .logo-collapse {
+            display: block;
+        }
+  
+        .sidebarlogo {
+            display: none;
+        }
+  
+        .sidebarlinks {
+            .links {
+                gap: 0;
+  
+                span {
+                    display: none;
+                }
+            }
+        }
+  
+        .bottommenu {
+            gap: 0;
+  
+            span {
+                display: none;
+            }
+        }
+    }
+  
+    @media screen and (max-width: 770px) {
+        display: none;
+    }
+  }
+  
+  .min-nav{
+    display: none;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+  
+    .bottom-bar{
+        display: flex;
+        height: 48px;
+        border-top: 1.5px solid #ddd;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+  
+    @media screen and (max-width: 770px) {
+        display: block;
+    }
+  }
+  
