@@ -3,7 +3,7 @@ import Posts from './Posts'
 
 function Feed() {
   return (
-    <div className="feed">
+    <div className="">
       <Posts />
     </div>
   )

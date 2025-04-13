@@ -17,19 +17,3 @@ body {
       color: inherit;
   }
 }
-
-/* .main-content {
-  position: absolute;
-  top: 0;
-  left: 245px;
-
-  @media screen and (max-width: 1200px){
-      left: 80px;
-  }
-
-  @media screen and (max-width: 770px) {
-      left: 0;
-  }
-} */
-
-

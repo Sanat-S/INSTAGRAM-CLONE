@@ -1,6 +1,17 @@
 .home-page {
     display: flex;
     padding-bottom: 48px;
+    position: absolute;
+    left: 245px;
+    right: 0;
+
+    @media screen and (max-width: 1200px){
+        left: 80px;
+    }
+  
+    @media screen and (max-width: 770px) {
+        left: 0;
+    }
 
 }
 
@@ -9,9 +20,10 @@
 .feed {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex: auto;
+    /* width: max-content; */
     align-items: center;
-    padding-left: 10%;
+    /* padding-left: 10%; */
 
     @media screen and (max-width: 1200px) {
         padding-left: 5%;
