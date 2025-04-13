@@ -50,7 +50,14 @@
 
         .lcs {
             display: flex;
-            gap: 10px;
+            gap: 5px;
+
+            button{
+                border: none;
+                width: auto;
+                height: auto;
+                background: transparent;
+            }
         }
     }
 }

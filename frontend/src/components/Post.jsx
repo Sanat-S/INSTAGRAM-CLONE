@@ -31,9 +31,15 @@ function Post() {
                                 </div>
                                 <div className="post-bottom">
                                     <div className="lcs">
-                                        <HeartIcon size={20} />
-                                        <MessageSquare size={20} />
-                                        <SendIcon size={20} />
+                                        <button className="">
+                                            <HeartIcon size={20} />
+                                        </button>
+                                        <button className="">
+                                            <MessageSquare size={20} />
+                                        </button>
+                                        <button className="">
+                                            <SendIcon size={20} />
+                                        </button>
                                     </div>
                                     <BookmarkIcon />
                                 </div>
