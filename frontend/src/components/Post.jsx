@@ -5,7 +5,7 @@ import image from '../assets/image_3.jpg'
 
 const post_data = [
     {
-        avater: (<CircleUserRound size={35} strokeWidth={1.5} />),
+        avater: "User",
         userName: "User_01",
         post: image,
         title: 'Hello This Is my first post...'
@@ -32,7 +32,13 @@ function Post() {
                             <div key={index}>
                                 <div className="post-top">
                                     <div className="user">
-                                        {items.avater}
+                                        <div className="outer-prof">
+                                            <div className="mid-prof">
+                                                <div className="avater">
+                                                    {items.avater}
+                                                </div>
+                                            </div>
+                                        </div>
                                         <span>{items.userName}</span>
                                     </div>
                                     <Ellipsis size={25} />
@@ -44,13 +50,13 @@ function Post() {
                                     <div className="lcs-s">
                                         <div className="lcs">
                                             <button className="">
-                                                <HeartIcon size={20} />
+                                                <HeartIcon/>
                                             </button>
                                             <button className="">
-                                                <MessageSquare size={20} />
+                                                <MessageSquare/>
                                             </button>
                                             <button className="">
-                                                <SendIcon size={20} />
+                                                <SendIcon/>
                                             </button>
                                         </div>
                                         <BookmarkIcon />

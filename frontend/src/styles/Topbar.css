@@ -1,0 +1,35 @@
+.topbar{
+    display: none;
+
+    @media screen and (max-width: 770px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+        border-bottom: 1.5px solid #aaaaaa;
+        padding: 0 15px;
+
+        img{
+            width: 110px;
+        }
+
+        .ser-not{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            input{
+                width: 240px;
+                height: 38px;
+                border: none;
+                border-radius: 10px;
+                background-color: #cccccc;
+                padding: 0 10px;
+                font-size: 0.9rem;
+                letter-spacing: .5px;
+                color: #eeeeee;
+                /* text-decoration-color: #eeeeee; */
+            }
+        }
+    }
+}

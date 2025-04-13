@@ -5,7 +5,7 @@
     width: 245px;
     position: fixed;
     z-index: 10;
-    border-right: 1.5px solid #ddd;
+    border-right: 1.5px solid #aaa;
     height: 100%;
     padding: 41px 0 0 0;
   
@@ -112,7 +112,7 @@
     .bottom-bar{
         display: flex;
         height: 48px;
-        border-top: 1.5px solid #ddd;
+        border-top: 1.5px solid #aaa;
         align-items: center;
         justify-content: space-evenly;
     }

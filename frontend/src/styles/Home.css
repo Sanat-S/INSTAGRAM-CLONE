@@ -17,7 +17,7 @@
 
 
 /* Feed component */
-.feed-part {
+.main-part {
     display: flex;
     flex-direction: column;
     flex: auto;

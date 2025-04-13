@@ -8,7 +8,8 @@ import Stories from '../components/Stories'
 function HomePage() {
   return (
     <div className="home-page">
-      <div className="feed-part">
+      <div className="main-part">
+
         <Stories />
         <Feed />
         <Outlet />
