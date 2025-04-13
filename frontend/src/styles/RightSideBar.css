@@ -1,0 +1,87 @@
+.rightside {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 15px;
+
+    .per {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5px 0;
+
+        .cur-user {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .avater {
+                height: 45px;
+                width: 45px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #ddd;
+                font-size: .7rem;
+                /* for testing */
+                font-weight: 500;
+                /* for testing */
+            }
+
+            .user-name {
+                h6 {
+                    height: 10px;
+                    margin: 0;
+                    font-size: 15px;
+                }
+
+                span {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        button {
+            border: none;
+            background: none;
+            font-size: .8rem;
+            font-weight: 500;
+            color: rgb(39, 39, 255);
+        }
+
+        button:hover{
+            color: blue;
+        }
+    }
+
+    .sugg {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .heading {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            button {
+                border: none;
+                background: none;
+                font-size: .9rem;
+                font-weight: 500;
+                color: #616161;
+            }
+
+            button:hover{
+                color: #000;
+            }
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        display: none;
+    }
+
+}

@@ -130,7 +130,7 @@
         }
     }
 
-    @media screen and (max-width: 770px) {
+    @media screen and (max-width: 720px) {
         max-width: 500px;
         width: 86vw;
 

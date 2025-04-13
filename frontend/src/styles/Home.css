@@ -9,14 +9,14 @@
         left: 80px;
     }
   
-    @media screen and (max-width: 770px) {
+    @media screen and (max-width: 720px) {
         left: 0;
     }
 
 }
 
 
-/* Feed component */
+/* main part */
 .main-part {
     display: flex;
     flex-direction: column;
@@ -24,18 +24,7 @@
     align-items: center;
     padding: 0 20px;
 
-    @media screen and (max-width: 770px) {
+    @media screen and (max-width: 720px) {
         padding: 0;
     }
-}
-
-
-.rightside {
-    width: 35%;
-
-
-    @media screen and (max-width: 770px) {
-        display: none;
-    }
-
 }
