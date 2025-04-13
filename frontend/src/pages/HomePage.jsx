@@ -1,9 +1,10 @@
 import React from 'react'
+import Feed from '../components/Feed'
 
 function HomePage() {
   return (
     <div className="home-page">
-      <h1>Home Page</h1>
+      <Feed />
     </div>
   )
 }

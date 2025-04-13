@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import sidebarlogo from '/instagram-text-icon.svg'
+import sidebarlogo from '../assets/instagram-text-icon.svg'
 import { NavLink } from 'react-router-dom'
 import { CircleUserRound, Compass, Heart, House, Instagram, LucideMenu, MenuIcon, MessageCircle, MessageCircleMore, PlusSquare, Search, SquarePlay } from 'lucide-react'
 
