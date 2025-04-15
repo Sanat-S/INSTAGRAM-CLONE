@@ -3,7 +3,17 @@
     flex-direction: column;
     height: auto;
     width: 500px;
-    margin: 20px 0;
+    margin: 10px 0;
+
+    .backgroundFilter{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 15;
+        background: #00000080;
+    }
 
     .post-top {
         display: flex;
@@ -19,42 +29,10 @@
             gap: 5px;
             align-items: center;
 
-            .outer-prof {
-                height: 36px;
-                width: 36px;
-                border-radius: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background: #833AB4;
-                background: linear-gradient(220deg, rgba(131, 58, 180, 1) 0%, rgba(252, 176, 69, 1) 100%);
-
-                .mid-prof{
-                    height: 32px;
-                    width: 32px;
-                    background-color: #fff;
-                    border-radius: 50%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                    .avater{
-                        height: 28px;
-                        width: 28px;
-                        border-radius: 50%;
-                        background-color: #ddd;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        font-size: .7rem;
-                    }
-                }
-
-            }
-
             span {
-                font-size: 1.1rem;
-                letter-spacing: 1px;
+                height: 36px;
+                font-size: .9rem;
+                letter-spacing: .5px;
                 font-weight: 500;
             }
         }
@@ -76,15 +54,20 @@
     }
 
     .post-bottom {
+        display: flex;
+        flex-direction: column;
         height: auto;
-        padding: 0 8px;
-        align-items: center;
+        gap: 4px;
+        padding: 10px 8px 0 8px;
+
+        p,
+        span {
+            margin-bottom: 0 !important;
+        }
 
         .lcs-s {
             display: flex;
             justify-content: space-between;
-            padding: 10px 0;
-
             .lcs {
                 display: flex;
                 gap: 5px;
@@ -98,20 +81,37 @@
             }
         }
 
+        .like-count {
+            font-size: .8rem;
+            font-weight: 500;
+        }
+
         .title {
-            font-size: 1rem;
+            font-size: .9rem;
             font-weight: 400;
             letter-spacing: 0.2px;
+
+            span {
+                font-size: 1rem;
+                font-weight: 700;
+                padding-right: 5px;
+                color: #4e4e4e;
+            }
+        }
+
+        .com-dailog {
+            p {
+                font-size: small;
+                color: #727272;
+            }
         }
 
         .commnt {
             display: flex;
-            justify-content: stretch;
 
             .com {
                 width: 100%;
                 font-size: small;
-                height: 30px;
                 border: none;
             }
 
@@ -119,12 +119,11 @@
                 font-size: 1rem;
                 font-weight: 500;
                 color: rgb(39, 39, 255);
-                height: 30px;
                 border: none;
                 background: none;
             }
 
-            input:focus {
+            input {
                 outline: none;
             }
         }

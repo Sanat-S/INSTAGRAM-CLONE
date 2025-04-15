@@ -1,20 +1,115 @@
 import React from 'react'
 import '../styles/Stories.css'
-import { UserCircle2 } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import Avater from './Avater'
+import avater from '../assets/user.png'
 
 const story = [
     {
-        lable: "User_01", // for testing
-        to: ''
+        image: avater,
+        userName: "User_01", // for testing
+        to: '',
+        isStory: 1,
+        isStorySeen: 0,
     },
     {
-        lable: "User_02", // for testing
-        to: ''
+        image: avater,
+        userName: "User_02", // for testing
+        to: '',
+        isStory: 1,
+        isStorySeen: 0,
     },
     {
-        lable: "User_03", // for testing
-        to: ''
+        image: avater,
+        userName: "User_03", // for testing
+        to: '',
+        isStory: 1,
+        isStorySeen: 0,
+    },
+    {
+        image: avater,
+        userName: "User_03", // for testing
+        to: '',
+        isStory: 1,
+        isStorySeen: 0,
+    },
+    {
+        image: avater,
+        userName: "User_03", // for testing
+        to: '',
+        isStory: 1,
+        isStorySeen: 0,
+    },
+    {
+        image: avater,
+        userName: "User_03", // for testing
+        to: '',
+        isStory: 1,
+        isStorySeen: 0,
+    },
+    {
+        image: avater,
+        userName: "User_03", // for testing
+        to: '',
+        isStory: 1,
+        isStorySeen: 0,
+    },
+    {
+        image: avater,
+        userName: "User_03", // for testing
+        to: '',
+        isStory: 1,
+        isStorySeen: 0,
+    },
+    {
+        image: avater,
+        userName: "User_03", // for testing
+        to: '',
+        isStory: 1,
+        isStorySeen: 0,
+    },
+    {
+        image: avater,
+        userName: "User_03", // for testing
+        to: '',
+        isStory: 1,
+        isStorySeen: 0,
+    },
+    {
+        image: avater,
+        userName: "User_03", // for testing
+        to: '',
+        isStory: 1,
+        isStorySeen: 0,
+    },
+    {
+
+        image: avater,
+        userName: "User_03", // for testing
+        to: '',
+        isStory: 1,
+        isStorySeen: 0,
+    },
+    {
+        image: avater,
+        userName: "User_03", // for testing
+        to: '',
+        isStory: 1,
+        isStorySeen: 0,
+    },
+    {
+        image: avater,
+        userName: "User_03", // for testing
+        to: '',
+        isStory: 1,
+        isStorySeen: 0,
+    },
+    {
+        image: avater,
+        userName: "User_03", // for testing
+        to: '',
+        isStory: 1,
+        isStorySeen: 0,
     },
 ]
 
@@ -26,11 +121,17 @@ function Stories() {
                     return (
                         <>
                             <Link className='navlink' to={items.to} key={index}>
-                                <div className="sto_">
-                                    <div className="inner_">
-                                        <div className="lable">
-                                            {items.lable}
-                                        </div>
+                                <div className="story">
+                                    <div className="single-container">
+                                        <Avater
+                                            image={items.image}
+                                            size={'60px'}
+                                            gap={'2px'}
+                                            isStory={items.isStory}
+                                            isStorySeen={items.isStorySeen}
+                                            storyCircle={'3px'}
+                                        />
+                                        <span>{items.userName}</span>
                                     </div>
                                 </div>
                             </Link>

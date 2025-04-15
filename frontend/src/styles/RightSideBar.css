@@ -16,20 +16,6 @@
             align-items: center;
             gap: 10px;
 
-            .avater {
-                height: 45px;
-                width: 45px;
-                border-radius: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: #ddd;
-                font-size: .7rem;
-                /* for testing */
-                font-weight: 500;
-                /* for testing */
-            }
-
             .user-name {
                 h6 {
                     height: 10px;
