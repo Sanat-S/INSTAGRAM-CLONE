@@ -58,7 +58,7 @@ function Post() {
                                         <Avater
                                             image={items.avater}
                                             size={'36px'}
-                                            storySize={'3px'}
+                                            storyCircle={'3px'}
                                             gap={'2px'}
                                             isStory={items.isStory}
                                             isStorySeen={items.isStorySeen}
